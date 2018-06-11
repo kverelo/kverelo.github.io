@@ -1,217 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Template by html.am -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>2 Column Layout &mdash; Left Menu with Header &amp; Footer</title>
+		<style type="text/css">
+		
+			body {
+				margin:0;
+				padding:0;
+				font-family: Sans-Serif;
+				line-height: 1.5em;
+			}
+			
+			#header {
+				background: #ccc;
+				height: 100px;
+			}
+			
+			#header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+			
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+			
+			#nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 230px;
+				margin-left: -100%;
+				background: #eee;
+			}
+			
+			#footer {
+				clear: left;
+				width: 100%;
+				background: #ccc;
+				text-align: center;
+				padding: 4px 0;
+			}
+	
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-left: 230px; /* Same as 'nav' width */
+			}
+			
+			.innertube {
+				margin: 15px; /* Padding for content */
+				margin-top: 0;
+			}
+		
+			p {
+				color: #555;
+			}
+	
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav ul a {
+				color: darkgreen;
+				text-decoration: none;
+			}
+		
+		</style>
+		
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content. 
+			You can remove this script and any reference to it. 
+			 ============================= */
+			var bodyText=["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h3>Heading</h3><p>The most important moment of your life is now. The most important person in your life is the one you are with now, and the most important activity in your life is the one you are involved with now."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>	
+	
+	</head>
+	
+	<body>		
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Drimo</title>
-    <!--    favicon-->
-    <link rel="shortcut icon" href="image/fav-icon.png" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!--css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- HTmL5 shim and Respond.js for IE8 support of HTmL5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-</head>
-
-<body>
-    <section class="hero-area-fix">
-        <div class="hero-area" id="water">
-            <div class="container">
-                <div class="row">
-                    <div class="hero-text">
-                        <h1>Drimo</h1>
-                        <div id="typed-strings">
-                            <h3>Drimo App Landing Page Template</h3>
-                            <h3>Drimo Android Template</h3>
-                            <h3>Drimo Apple iso</h3>
-                        </div>
-                        <h3><span id="typed"></span></h3>
-                        <h4>A Complete Landing Page and Multipurpose Package</h4>
-                        <a href="#" class="btn view-demo" data-scroll-nav="1">View Demos</a>
-                        <a href="#" class="btn buy-now">Buy Drimo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="product-landing pro_d" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <h2 class="title">Home onepage Demos</h2>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-1.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 01</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-2.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-2.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 02</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-3.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-3.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 03</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-4.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-4.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 04</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-5.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-5.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 05</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-6.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-6.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 06</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-7.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-7.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 07</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-8.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-8.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 08</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-9.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-9.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 09</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-10.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-10.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 10</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <a href="drimo/index-11.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/index-11.png" class="img-responsive radius" alt="">
-                            <p class="product-title">OnePage - 11</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="saas-landing">
-        <div class="container">
-            <div class="row">
-                <h2 class="title">Drimo Blog Page Demos</h2>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="drimo/blog.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/blog-1.png" class="img-responsive radius" alt="">
-                            <p class="product-title">Blog List - 01</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="drimo/blog-right-sidebar.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/blog-2.png" class="img-responsive radius" alt="">
-                            <p class="product-title">Blog List - 02</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="drimo/single-blog.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/blog-3.png" class="img-responsive radius" alt="">
-                            <p class="product-title">Blog Details</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="drimo/404.html" target="_blank">
-                        <div class="item-imag">
-                            <img src="image/product/error_page.png" class="img-responsive radius" alt="">
-                            <p class="product-title">Error</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer-area">
-        <div class="container">
-            <div class="row text-center">
-                <p class="copyright">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-            </div>
-        </div>
-    </footer>
-    <!--End Footer area-->
-    <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/nav.js"></script>
-    <!--waypoint js-->
-    <script src="vendores/waypoint/waypoints.min.js"></script>
-    <!--counter js-->
-    <script src="vendores/couterup/jquery.counterup.min.js"></script>
-    <script src="vendores/typedjs/typed.min.js"></script>
-    <script src="vendores/ripples/jquery.ripples-min.js"></script>
-    <script type="text/javascript" src="js/scrollIt.min.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script src="js/custom.js"></script>
-    <script>
-    $(function() {
-        $.scrollIt();
-    });
-    </script>
-    <script>
-    new WOW().init();
-    </script>
-</body>
-
+		<header id="header">
+			<div class="innertube">
+				<h1>Header...</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h1>Heading</h1>
+						<p><script>generateText(20)</script></p>
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<div class="innertube">
+					<h3>Left heading</h3>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+					</ul>
+					<h3>Left heading</h3>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+					</ul>
+					<h3>Left heading</h3>
+					<ul>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>Footer...</p>
+			</div>
+		</footer>
+	
+	</body>
 </html>
