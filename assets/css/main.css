@@ -1403,7 +1403,7 @@
 
 	body {
 		background-color: #000;
-		background-image: url("../../images/bg.jpg");
+		
 		background-size: cover;
 		background-position: top center;
 	}
@@ -2591,7 +2591,6 @@
 		}
 
 			#header .avatar img {
-				border-radius: 100%;
 				display: block;
 				width: 10em;
 			}
