@@ -19,6 +19,22 @@
 	body {
 		line-height: 1;
 	}
+	
+.cr {
+  background-position: center;
+  transition: background 0.8s;
+}
+.cr:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.cr:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+}
+
 
 	ol, ul {
 		list-style: none;
