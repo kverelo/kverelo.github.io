@@ -20,6 +20,19 @@
 		line-height: 1;
 	}
 	
+.concenter {
+  height: 100%;
+  width: 100%;
+}
+.concenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cendiv {
+  width: 80px;
+}
+
 .ripple{
   overflow:hidden;
 }
