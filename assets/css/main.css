@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
@@ -31,6 +31,7 @@
 }
 .cwid {
   width: 80px;
+margin-right:20px;
 }
 
 .cendiv
